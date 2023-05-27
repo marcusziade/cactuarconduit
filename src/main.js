@@ -11,7 +11,4 @@ import "prismjs/components/prism-go"
 import "prismjs/components/prism-rust"
 import "prismjs/components/prism-lua"
 
-new Vue({
-  router,
-  render: h => h(App)
-}).$mount('#app')
+createApp(App).use(router).mount('#app')

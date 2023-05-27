@@ -3,7 +3,7 @@
     <header>
       <h1>My Blog</h1>
       <nav>
-        <router-link to="/">Home</router-link>
+        <router-link to="/">HomePage</router-link>
       </nav>
     </header>
     <main>
@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: 'Layout'
+  name: 'AppLayout'
 }
 </script>
 

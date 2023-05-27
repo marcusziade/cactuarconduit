@@ -1,16 +1,16 @@
 <template>
-  <Layout>
-    <h2>Home</h2>
+  <AppLayout>
+    <h2>HomePage</h2>
     <!-- Add a list of posts here -->
-  </Layout>
+  </AppLayout>
 </template>
 
 <script>
-import Layout from '@/components/Layout.vue'
+import AppLayout from '@/components/AppLayout.vue'
 
 export default {
   components: {
-    Layout
+    AppLayout
   },
   // ...
 }
