@@ -1,8 +1,11 @@
 const { defineConfig } = require('@vue/cli-service')
+
 module.exports = defineConfig({
-  transpileDependencies: true
-})
-module.exports = {
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/cactuarconduit/'
+    : '/',
+  transpileDependencies: true,
+
   chainWebpack: config => {
     config.module
       .rule('md')
@@ -16,4 +19,4 @@ module.exports = {
         raw: true
       });
   }
-}
+})
